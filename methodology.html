@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Methodology, coding rules, and limitations for Lantern Intelligence Lab research and datasets." />
+  <title>Methodology & Data Notes | Lantern Intelligence Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="methodology.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Lantern Intelligence Lab</a>
+    <nav aria-label="Primary navigation">
+      <a href="index.html#research">Research</a>
+      <a href="dashboard.html">Data Lab</a>
+      <a href="methodology.html" aria-current="page">Methodology</a>
+      <a href="index.html#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="methodology-hero">
+      <p class="eyebrow">Research Standards</p>
+      <h1>Methodology & Data Notes</h1>
+      <p class="hero-copy">
+        Lantern Intelligence Lab uses publicly available information,
+        transparent coding rules, and documented limitations to produce
+        reproducible public-interest research.
+      </p>
+    </section>
+
+    <section class="methodology-layout">
+      <aside class="methodology-nav" aria-label="Page sections">
+        <p class="eyebrow">On this page</p>
+        <a href="#principles">Research principles</a>
+        <a href="#scope">Dataset scope</a>
+        <a href="#selection">Case selection</a>
+        <a href="#coding">Coding rules</a>
+        <a href="#status">Case-status rules</a>
+        <a href="#quality">Quality control</a>
+        <a href="#limitations">Limitations</a>
+        <a href="#updates">Updates and corrections</a>
+      </aside>
+
+      <div class="methodology-content">
+        <section id="principles" class="method-section">
+          <p class="eyebrow">01</p>
+          <h2>Research principles</h2>
+          <div class="principle-grid">
+            <article><h3>Evidence first</h3><p>Findings are grounded in publicly available records. Facts, allegations, judgments, and analytical interpretations are labeled separately.</p></article>
+            <article><h3>Transparent methods</h3><p>Source criteria, variable definitions, coding decisions, and known limitations are documented alongside each project.</p></article>
+            <article><h3>Ethical by design</h3><p>Lantern avoids unnecessary identifying details about victims and does not reproduce graphic or exploitative material.</p></article>
+            <article><h3>Reproducible research</h3><p>Whenever possible, public sources and structured data are preserved so another researcher can understand how a result was produced.</p></article>
+          </div>
+        </section>
+
+        <section id="scope" class="method-section">
+          <p class="eyebrow">02</p>
+          <h2>Federal Prosecution Explorer scope</h2>
+          <p>The Federal Human Trafficking Prosecution Explorer is a developing collection of selected federal cases identified through official public announcements and related court information.</p>
+          <div class="definition-box"><h3>Included</h3><ul>
+            <li>Federal criminal cases involving human-trafficking charges.</li>
+            <li>Cases announced by DOJ, U.S. Attorney's Offices, FBI, HSI, or another official agency.</li>
+            <li>Indictments, guilty pleas, convictions, and sentencings when publicly documented.</li>
+            <li>Cases with enough information to code the location, trafficking type, status, and source.</li>
+          </ul></div>
+          <div class="definition-box"><h3>Not currently included</h3><ul>
+            <li>State-only prosecutions.</li>
+            <li>Uncharged investigations.</li>
+            <li>Hotline reports that do not correspond to a public federal case.</li>
+            <li>Cases identified only through unverified social-media posts or secondary summaries.</li>
+            <li>Cases where trafficking involvement cannot be established from the public record.</li>
+          </ul></div>
+        </section>
+
+        <section id="selection" class="method-section">
+          <p class="eyebrow">03</p>
+          <h2>Case selection process</h2>
+          <ol class="process-list">
+            <li><strong>Identify a candidate case.</strong>Official DOJ, FBI, HSI, or U.S. Attorney's Office sources are reviewed for trafficking-related charges or outcomes.</li>
+            <li><strong>Confirm federal jurisdiction.</strong>The announcement must identify a federal district, federal charge, or federal court proceeding.</li>
+            <li><strong>Verify the trafficking nexus.</strong>The case must involve an explicit trafficking charge or a publicly documented forced-labor or sex-trafficking allegation.</li>
+            <li><strong>Record the procedural posture.</strong>Allegations, pleas, convictions, and sentencings are coded separately.</li>
+            <li><strong>Preserve the source.</strong>Each row includes a direct link to the official source used for coding.</li>
+          </ol>
+        </section>
+
+        <section id="coding" class="method-section">
+          <p class="eyebrow">04</p>
+          <h2>Coding rules</h2>
+          <div class="table-wrapper"><table><thead><tr><th>Field</th><th>Rule</th></tr></thead><tbody>
+            <tr><td>Case ID</td><td>A unique Lantern identifier. It is not an official court number.</td></tr>
+            <tr><td>Date announced</td><td>The publication date of the official source used to create or update the row.</td></tr>
+            <tr><td>State</td><td>The state associated with the prosecuting federal district, not every state where alleged conduct occurred.</td></tr>
+            <tr><td>Federal district</td><td>The district named in the official announcement.</td></tr>
+            <tr><td>Lead agency</td><td>Agencies explicitly identified as investigative leads or major partners.</td></tr>
+            <tr><td>Trafficking type</td><td>Coded from the charges and official description. Multiple types may be recorded when supported.</td></tr>
+            <tr><td>Industry</td><td>The commercial setting or labor sector described in the public record. This field is descriptive, not a legal classification.</td></tr>
+            <tr><td>Case status</td><td>The most recent publicly documented procedural status known at the time of update.</td></tr>
+            <tr><td>Notes</td><td>A concise summary of alleged or admitted conduct, written to distinguish accusations from established outcomes.</td></tr>
+          </tbody></table></div>
+        </section>
+
+        <section id="status" class="method-section">
+          <p class="eyebrow">05</p>
+          <h2>Case-status rules</h2>
+          <div class="status-grid">
+            <article><h3>Indicted / charged</h3><p>The row reflects allegations. Defendants are presumed innocent unless and until proven guilty.</p></article>
+            <article><h3>Guilty plea</h3><p>The defendant has admitted guilt in federal court, but sentencing may still be pending.</p></article>
+            <article><h3>Convicted</h3><p>Guilt was established through a plea or verdict. The row should indicate whether sentencing remains pending.</p></article>
+            <article><h3>Sentenced</h3><p>The row records the publicly announced sentence and any restitution or supervised-release terms reported by the source.</p></article>
+          </div>
+        </section>
+
+        <section id="quality" class="method-section">
+          <p class="eyebrow">06</p>
+          <h2>Quality control</h2>
+          <p>Each case should be reviewed for internal consistency before publication. Dates, districts, defendant names, status labels, and URLs are checked against the source. When multiple official sources conflict, the discrepancy is documented rather than silently resolved.</p>
+          <p>Future releases may add a second-review field, court-document links, source-archive dates, and versioned change logs.</p>
+        </section>
+
+        <section id="limitations" class="method-section limitation-section">
+          <p class="eyebrow">07</p>
+          <h2>Limitations</h2>
+          <div class="limitation-callout"><strong>This dataset is not a prevalence measure.</strong><p>It reflects selected federal enforcement actions and public announcement practices. A state or district with more recorded cases may have more enforcement activity, more public reporting, or greater representation in the collection. It does not necessarily have more trafficking.</p></div>
+          <ul>
+            <li>Federal cases represent only one part of the U.S. justice system.</li>
+            <li>Public announcements vary significantly in detail.</li>
+            <li>Cases may involve conduct across several states, while the dataset records one prosecuting district.</li>
+            <li>Legal outcomes can change after the source publication date.</li>
+            <li>Industry labels may simplify complex or overlapping settings.</li>
+            <li>The pilot dataset is intentionally small and not statistically representative.</li>
+          </ul>
+        </section>
+
+        <section id="updates" class="method-section">
+          <p class="eyebrow">08</p>
+          <h2>Updates and corrections</h2>
+          <p>The explorer is intended to be updated as new official information becomes available. Material changes should be recorded in a version history, including status updates, corrected values, removed duplicates, and revised coding rules.</p>
+          <p>Current release: <strong>Version 0.1 · July 2026</strong></p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Lantern Intelligence Lab</p>
+    <p>Independent open-source research.</p>
+  </footer>
+</body>
+</html>
