@@ -22,3 +22,6 @@ A static launch site for Lantern Intelligence Lab.
 3. Keep the default settings and deploy.
 
 No build command or framework is required.
+
+</Markdown>
+Public website for Lantern Intelligence Lab.
